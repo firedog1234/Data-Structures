@@ -142,10 +142,15 @@ void Heap::insert(int val){
 
 int Heap::extract(){
   size--;
-
   swap(arr[0], arr[size-1]);
   heapifyDown(0);
 }
+
+int Heap::peek() const {
+  return arr[0];
+}
+
+
 
 
 

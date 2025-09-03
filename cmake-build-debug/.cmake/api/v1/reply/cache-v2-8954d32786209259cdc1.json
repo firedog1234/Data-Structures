@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/avipatel/CLionProjects/Heap_Implementation/cmake-build-debug"
+			"value" : "/Users/avipatel/CLionProjects/Data_Structure_Imps/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/avipatel/CLionProjects/Heap_Implementation/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/Users/avipatel/CLionProjects/Data_Structure_Imps/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -539,7 +539,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/avipatel/CLionProjects/Heap_Implementation"
+			"value" : "/Users/avipatel/CLionProjects/Data_Structure_Imps"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1127,7 +1127,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/avipatel/CLionProjects/Heap_Implementation/cmake-build-debug"
+			"value" : "/Users/avipatel/CLionProjects/Data_Structure_Imps/cmake-build-debug"
 		},
 		{
 			"name" : "Heap_Implementation_IS_TOP_LEVEL",
@@ -1151,7 +1151,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/avipatel/CLionProjects/Heap_Implementation"
+			"value" : "/Users/avipatel/CLionProjects/Data_Structure_Imps"
 		}
 	],
 	"kind" : "cache",

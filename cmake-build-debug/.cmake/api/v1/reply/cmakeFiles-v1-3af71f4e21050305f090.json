@@ -1223,8 +1223,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/avipatel/CLionProjects/Heap_Implementation/cmake-build-debug",
-		"source" : "/Users/avipatel/CLionProjects/Heap_Implementation"
+		"build" : "/Users/avipatel/CLionProjects/Data_Structure_Imps/cmake-build-debug",
+		"source" : "/Users/avipatel/CLionProjects/Data_Structure_Imps"
 	},
 	"version" : 
 	{
