@@ -35,7 +35,7 @@ public:
     int getSize() const;     // return current number of elements
     bool empty() const;      // check if heap is empty
     bool full() const;        // optional: check if heap is full
-    void buildHeap(int *arr);
+    void buildHeap(int *arr, int size);
 };
 
 #endif

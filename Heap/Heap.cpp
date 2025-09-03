@@ -192,7 +192,12 @@ bool Heap::full() const {
   return size == capacity;
 }
 
-void Heap::buildHeap(int *arr) {
+void Heap::buildHeap(int *arr, int size) {
+  int startIndex = (size-1)/2;
+
+  for (int i = startIndex; i >= 0; i--) {
+    heapifyDown(i);
+  }
 
 }
 
