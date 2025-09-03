@@ -161,9 +161,18 @@ void Heap::insert(int val) {
 }
 
 int Heap::extract() {
-  size--;
+  if (size == 0) {
+    return -1;
+  }
+  else if (size == 1) {
+    size--;
+    return arr[0];
+  }
+  int place = arr[0];
   swap(arr[0], arr[size - 1]);
-  heapifyDown(arr, 0);
+  size--;
+  heapifyDown(this->arr, 0);
+  return place;
 }
 
 int Heap::peek() const { return arr[0]; }
