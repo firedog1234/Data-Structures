@@ -28,6 +28,36 @@ Heap::Heap(int cap, bool maxHeap){
   }
 }
 
+Heap::Heap(const Heap& other) {
+  capacity = other.capacity;
+  isMaxHeap = other.isMaxHeap;
+  size = other.size;
+  comparator = other.comparator;
+  compareChildren = other.compareChildren;
+  arr = new int[capacity];
+  for(int i = 0; i < size; i++) {
+    arr[i] = other.arr[i];
+  }
+}
+
+Heap& Heap::operator=(const Heap& other) {
+  if (this == &other) {
+    return *this;
+  }
+  delete[] arr;
+  capacity = other.capacity;
+  isMaxHeap = other.isMaxHeap;
+  size = other.size;
+  comparator = other.comparator;
+  compareChildren = other.compareChildren;
+  arr = new int[capacity];
+  for(int i = 0; i < size; i++) {
+    arr[i] = other.arr[i];
+  }
+
+  return *this;
+}
+
 Heap::~Heap(){
   delete[] arr;
 }
@@ -149,6 +179,20 @@ int Heap::extract(){
 int Heap::peek() const {
   return arr[0];
 }
+
+int Heap::getSize() const {
+  return size;
+}
+
+bool Heap::empty() const {
+  return size == 0;
+}
+
+bool Heap::full() const {
+  return size == capacity;
+}
+
+
 
 
 
