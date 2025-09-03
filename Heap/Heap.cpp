@@ -192,6 +192,11 @@ bool Heap::full() const {
   return size == capacity;
 }
 
+void Heap::buildHeap(int *arr) {
+
+}
+
+
 
 
 

@@ -16,7 +16,7 @@ private:
 
     void heapifyUp(int index);     // internal: fix heap after insert
     void heapifyDown(int index);   // internal: fix heap after remove
-    bool compareMaxHeap(int parent, int child); // returns true if parent-child ordering is correct
+    bool compareMaxHeap(int parent, int child);
     bool compareMinHeap(int parent, int child);
     int compareChildrenMaxHeap(int currentIndex, int leftChildIndex, int rightChildIndex);
     int compareChildrenMinHeap(int currentIndex, int leftChildIndex, int rightChildIndex);
@@ -35,6 +35,7 @@ public:
     int getSize() const;     // return current number of elements
     bool empty() const;      // check if heap is empty
     bool full() const;        // optional: check if heap is full
+    void buildHeap(int *arr);
 };
 
 #endif
