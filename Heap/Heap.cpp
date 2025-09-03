@@ -105,7 +105,7 @@ int Heap::compareChildrenMinHeap(int currentIndex, int leftChildIndex,
   }
 }
 
-void Heap::heapifyDown(int index) {
+void Heap::heapifyDown(int *arr, int index) {
   bool isComplete = false;
   int currentPos = index;
   int leftChild = 2 * index + 1;
@@ -163,7 +163,7 @@ void Heap::insert(int val) {
 int Heap::extract() {
   size--;
   swap(arr[0], arr[size - 1]);
-  heapifyDown(0);
+  heapifyDown(arr, 0);
 }
 
 int Heap::peek() const { return arr[0]; }
@@ -174,10 +174,10 @@ bool Heap::empty() const { return size == 0; }
 
 bool Heap::full() const { return size == capacity; }
 
-void Heap::buildHeap(int* arr, int size) {
+void Heap::buildHeap(int* ar, int size) {
   int startIndex = (size - 1) / 2;
 
   for (int i = startIndex; i >= 0; i--) {
-    heapifyDown(i);
+    heapifyDown(ar, i);
   }
 }

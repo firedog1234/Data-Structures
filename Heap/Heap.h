@@ -13,7 +13,7 @@ class Heap {
   int (Heap::*compareChildren)(int currentIndex, int leftChild, int rightChild);
 
   void heapifyUp(int index);
-  void heapifyDown(int index);
+  void heapifyDown(int *arr, int index);
   bool compareMaxHeap(int parent, int child);
   bool compareMinHeap(int parent, int child);
   int compareChildrenMaxHeap(int currentIndex, int leftChildIndex,
