@@ -33,6 +33,18 @@ Heap::~Heap(){
 }
 
 int Heap::compareChildrenMaxHeap(int currentIndex, int leftChildIndex, int rightChildIndex) {
+  if (leftChildIndex >= size) {
+    return currentIndex;
+  }
+  else if (rightChildIndex >= size) {
+    if (arr[leftChildIndex] > arr[currentIndex]) {
+      return leftChildIndex;
+    }
+    else {
+      return currentIndex;
+    }
+  }
+
   if (arr[leftChildIndex] > arr[rightChildIndex] && arr[leftChildIndex] > arr[currentIndex]) {
     return leftChildIndex;
   }
@@ -45,6 +57,18 @@ int Heap::compareChildrenMaxHeap(int currentIndex, int leftChildIndex, int right
 }
 
 int Heap::compareChildrenMinHeap(int currentIndex, int leftChildIndex, int rightChildIndex) {
+  if (leftChildIndex >= size) {
+    return currentIndex;
+  }
+  else if (rightChildIndex >= size) {
+    if (arr[leftChildIndex] < arr[currentIndex]) {
+      return leftChildIndex;
+    }
+    else {
+      return currentIndex;
+    }
+  }
+
   if (arr[leftChildIndex] < arr[rightChildIndex] && arr[leftChildIndex] < arr[currentIndex]) {
     return leftChildIndex;
   }
@@ -90,8 +114,6 @@ void Heap::heapifyUp(int index) {
     parentIndex = floor((currentPos - 1)/2);
   }
 }
-
-
 
 void Heap::insert(int val){
   size++;
